@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-image {
+    width: 200px;
+    height: 200px;
+}
+
+#desktop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#start-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#bsod {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bsod-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

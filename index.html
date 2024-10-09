@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaLion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="playStartupSound()">
+    <div id="loading-screen">
+        <img src="loading.jpg" alt="Loading" id="loading-image">
+    </div>
+    <div id="desktop" style="display: none;">
+        <div class="icon" onclick="openApp('Sudoku.html')">Sudoku</div>
+		<div class="icon" onclick="openApp('TicTacToe.html')">TicTacToe</div>
+        <div class="icon" onclick="openApp('minesweeper.html')">Minesweeper</div>
+		<div class="icon" onclick="openApp('snake.html')">Snake</div>
+		<div class="icon" onclick="openApp('update.html')">Updates</div>
+		<div class="icon" onclick="openApp('Solitaire.html')">Solitaire</div>
+		<div class="icon" onclick="openApp('news.html')">News</div>
+    </div>
+    <div id="start-menu" style="display: none;">
+        <button onclick="openApp('shutdown.html')">Shut Down</button>
+    </div>
+	    <div id="bsod" style="display: none;">
+        <img src="BSOD.jpg" alt="BSOD" id="bsod-image">
+    </div>
+    <audio id="startup-sound" src="startup.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
